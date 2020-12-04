@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="Heather Akers-Healy" content="">
+    <title>abbynormative.org</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style>
+    html{
+      height: 100%;
+    }
+    body{
+      margin: 0 auto;
+      height: 100%;
+      background-image: url(http://climate.nasa.gov/system/downloadable_items/174_landsat_art_aleutian_1900x1200.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-family: 'Slabo 27px', serif;
+      font-size: 120%;
+  
+    }
+    nav{
+      margin-right:10px;
+      float: right;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    input, select, button{
+        font-family: inherit;
+        font-size: 18px;
+      -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+               border-radius: 10px;
+      background-color: white;
+      -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      padding: 10px;
+      border: 0;
+      opacity: 0.8;
+    }
+    button:hover {
+      background-color: #AFBCD8;
+      box-shadow: 3px 3px 5px black;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    .social-button{
+      font-size: 90%;
+      margin: .1em;
+    }
+    #menu{
+      margin-top: 5%;
+      height: 10%;
+      background: white;
+      opacity: 0.8;
+    }
+    #intro{
+      padding: 10%;
+      text-align: center;
+      font-size: 350%;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 700; 
+      color: #FFFFFF;
+      text-shadow: 5px 3px 12px #000000;
+      background: #000013;
+      opacity: 0.75;
+    }
+    #about{
+      font-size: 100%;
+  
+      background: white;
+      opacity: 0.9;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    #about-title{
+      margin-top: 5%;
+      font-size: 250%;
+      height: 10%;
+      text-align: center;
+      background: black;
+      color: white;
+      opacity: 0.8;
+    }
+    #portfolio{
+      background: white;
+      opacity: 0.95;
+      padding: 5%;
+      text-align: center;
+    }
+    #portfolio-title{
+      margin-top: 5%;
+      font-size: 250%;
+      height: 10%;
+      text-align: center;
+      color: white;
+      background: black;
+      opacity: 0.8;
+    }
+    #contact-title{
+      margin-top: 5%;
+      font-size: 250%;
+      height: 10%;
+      text-align: center;
+      background: black;
+      color: white;
+      opacity: 0.8;
+    }
+    #contact{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      height: 100%;
+      background: white;
+      opacity: 0.9;
+      text-align: center;
+      height: 30%;
+    }
+    #footer{
+      height: 10%;
+      text-align: center;
+      padding-top: 1%;
+    }
+    p{
+      font-size: 100%;
+      display:inline;
+      transition: color 200ms ease;
+    }
+    /* The class "Blink" is set to be transparent*/
+    p.blink {color:transparent;}
+    div.thumbnail {
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        padding-bottom: 2%;
+    }
+    div.thumbnail:hover{
+       background-color: #AFBCD8;
+      box-shadow: 3px 3px 5px black;
+    }
+    img{
+      opacity: 1;
+      height: 90%;
+      width: 60%;
+      padding: 5%;
+    }
+    .caption {
+        display: block;
+    }
+    @media screen and (max-width: 350px){
+      body{ background: #4747D1;}
+    }
+  </style>
+  </head>
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <body>
+    <div id='menu'>
+      <nav>
+        <button><a href=#about>About</a></button>
+        <button><a href=#portfolio>Portfolio</a></button>
+        <button><a href=#contact>Contact</a></button>
+        <button><a href=#top>Home</a></button>
+      </nav>
+    </div>
+    <div id='intro'>
+      Heather Akers-Healy
+      
+      <hr>
+      
+      <button class='social-button'><a href=https://twitter.com/abbynormative + ' target="_blank">Twitter</a></button>
+      <button class='social-button'><a href=https://github.com/abbynormative + ' target="_blank">Github</a></button>
+      <button class='social-button'><a href=https://www.linkedin.com/in/hrahhrah + ' target="_blank">LinkedIn</a></button>
+    </div>
+    <div id='about-title'>
+             About</div>
+    <div id='about'>
+      Hi! I'm a web developer, CFO of a small hardware startup, activist, and occasional freelance journalist. 
+      I'm currently earning a Master's degree in data science at the Rochester Institute of Technology while volunteering with
+      <a href='https://oaklandprivacy.org'>Oakland Privacy Group</a>, where I recently completed a small research project
+      investigating hidden biases in how consumers make use of surveillance technology at home.
+      In previous lives I've been a paralegal, a legal secretary, an attendant for a man with cerebral palsy, and an admin at a 
+      medical provider's office, helping clients navigate the sometimes tricky medical insurance process.<br/><br/>
+      I'd like to find part-time work as a coder, researcher, or non-profit general support. I'm most interested in 
+      doing web development, data analytics, or software engineering with non-profits. My skills include: JavaScript, Python, R, 
+      HTML, CSS, some PHP and Java. I have experience working on both in-person and remote teams as a software engineer,
+      data analyst, and digital producer.<br/> <br/>      
+    </div>
+    <div id='portfolio-title'>
+    Portfolio</div>
+    <div id='portfolio'>
+      <div class='thumbnail'>
+      <a href=https://codepen.io/newbienewb/full/jbmZMO target="_blank"><img src=http://www.abbynormative.org/images/calculator.jpg ></img>
+        <span class="caption">JavaScript Calculator:<br/> A Free Code Camp project using AngularJS</span></a></div>
+    <div class='thumbnail'>
+      <a href=https://codepen.io/newbienewb/full/PzdALN target="_blank"><img src=http://www.abbynormative.org/images/markdown.png>
+      <span class="caption">Markdown Previewer:<br/> A simple React and SCSS project</span></a>
+    </div>
+    <div class='thumbnail'><a href=https://codepen.io/newbienewb/full/pjRKZW target="_blank"><img src=http://www.abbynormative.org/images/wikipedia.jpg>
+      <span class="caption">Wikipedia Viewer:<br/> A Wikipedia API and AngularJS project</span></a>
+    </div>
+    <div class='thumbnail'><a href=http://abbynormative.org/game target="_blank"><img src=https://i.imgur.com/empJP9W.jpg>
+      <span class="caption">NSA FOIA game:<br/> A text-based JavaScript adventure game</span></a>
+    </div><div class='thumbnail'><a href=https://abbynormative.org/Data-Viz/ target="_blank"><img src=http://www.abbynormative.org/images/datavizexample.png>
+      <span class="caption">June Weather:<br/> A data visualization using D3</span></a>
+    </div>
+    <div class='thumbnail'><a href=https://chrome.google.com/webstore/detail/florida-man-he-shall-not/fjfnlgknacipihkceoijaongcodggjnf target="_blank"><img src=https://i.imgur.com/3R30Urr.jpg>
+      <span class="caption">Florida Man:<br/> A Chrome extension for the 2016 election cycle</span></a>
+    </div>
+    </div>
+    <div id='contact-title'>
+    Contact</div>
+    <div id='contact'>
+      <div style='font-size: 200%;'>hrahhrah AT gmail dot com</div>
+      <div><button class='social-button' style='font-size: 200%;'><a href=https://twitter.com/abbynormative + ' target="_blank">Twitter</a></button>
+      <button class='social-button' style='font-size: 200%;'><a href=https://github.com/abbynormative + ' target="_blank">Github</a></button>
+      <button class='social-button' style='font-size: 200%;'><a href=https://www.linkedin.com/in/hrahhrah + ' target="_blank">LinkedIn</a></button></div>
+    </div>
+    <div id='footer'>
+       <button><a href=#about>About</a></button>
+        <button><a href=#portfolio>Portfolio</a></button>
+        <button><a href=#contact>Contact</a></button>
+        <button><a href=#top>Home</a></button>
+    </div>
+    
+  </body>
+</html>
