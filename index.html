@@ -27,7 +27,7 @@
     }
     nav{
       margin-right:10px;
-      float: right;
+      /*float: right;*/
       position: relative;
       top: 50%;
       transform: translateY(-50%);
@@ -38,7 +38,6 @@
       -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
                border-radius: 10px;
-      background-color: white;
       -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
@@ -46,9 +45,24 @@
       border: 0;
       opacity: 0.8;
     }
-    button:hover {
-      background-color: #AFBCD8;
-      box-shadow: 3px 3px 5px black;
+    .footer-button {
+      background-color: white;
+      font-family: inherit;
+        font-size: 120%;
+      -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+               border-radius: 10px;
+      -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      padding: 10px;
+      border: 0;
+      opacity: 0.8;
+    }
+    
+    a:hover,button:hover {
+      background-color: #c1dfe0;;
+      /*box-shadow: 3px 3px 5px black;*/
     }
     a{
       text-decoration: none;
@@ -57,6 +71,13 @@
     .social-button{
       font-size: 90%;
       margin: .1em;
+    }
+    .nav-item{
+      padding: 1%;
+    }
+    .nav-item:hover {
+      background-color: #c1dfe0;
+      border-radius: 10px;
     }
     #menu{
       margin-top: 5%;
@@ -149,8 +170,10 @@
         padding-bottom: 2%;
     }
     div.thumbnail:hover{
-       background-color: #AFBCD8;
-      box-shadow: 3px 3px 5px black;
+      background-color: #c1dfe0;
+      border-radius: 10px;
+     /*background-color: #AFBCD8;*/
+      /*box-shadow: 1px 1px 1px #495b5c;*/
     }
     img{
       opacity: 1;
@@ -173,10 +196,10 @@
   <body>
     <div id='menu'>
       <nav>
-        <button><a href=#about>About</a></button>
-        <button><a href=#portfolio>Portfolio</a></button>
-        <button><a href=#contact>Contact</a></button>
-        <button><a href=#top>Home</a></button>
+        <a href=#about class='nav-item'>About</a>
+        <a href=#portfolio class='nav-item'>Portfolio</a>
+        <a href=#contact class='nav-item'>Contact</a>
+        <a href=#top class='nav-item'>Home</a>
       </nav>
     </div>
     <div id='intro'>
@@ -193,7 +216,7 @@
     <div id='about'>
       Hi! I'm a web developer, CFO of a small hardware startup, activist, and occasional freelance journalist. 
       I'm currently earning a Master's degree in data science at the Rochester Institute of Technology while volunteering with
-      <a href='https://oaklandprivacy.org'>Oakland Privacy Group</a>, where I recently completed a small research project
+      <a href='https://oaklandprivacy.org'><u>Oakland Privacy Group</u></a>, where I recently completed a small research project
       investigating hidden biases in how consumers make use of surveillance technology at home.
       In previous lives I've been a paralegal, a legal secretary, an attendant for a man with cerebral palsy, and an admin at a 
       medical provider's office, helping clients navigate the sometimes tricky medical insurance process.<br/><br/>
@@ -233,10 +256,10 @@
       <button class='social-button' style='font-size: 200%;'><a href=https://www.linkedin.com/in/hrahhrah + ' target="_blank">LinkedIn</a></button></div>
     </div>
     <div id='footer'>
-       <button><a href=#about>About</a></button>
-        <button><a href=#portfolio>Portfolio</a></button>
-        <button><a href=#contact>Contact</a></button>
-        <button><a href=#top>Home</a></button>
+       <button class='footer-button'><a href=#about>About</a></button>
+        <button class='footer-button'><a href=#portfolio>Portfolio</a></button>
+        <button class='footer-button'><a href=#contact>Contact</a></button>
+        <button class='footer-button'><a href=#top>Home</a></button>
     </div>
     
   </body>
