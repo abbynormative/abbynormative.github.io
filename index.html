@@ -1,254 +1,474 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="Heather Akers-Healy" content="">
-    <title>abbynormative.org</title>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <style>
-    html{
-      height: 100%;
-    }
-    body{
-      margin: 0 auto;
-      height: 100%;
-      background-image: url(http://climate.nasa.gov/system/downloadable_items/174_landsat_art_aleutian_1900x1200.jpg);
-      background-attachment: fixed;
-      /*background-repeat: no-repeat;*/
-      font-family: 'Slabo 27px', serif;
-      font-size: 1.2em;
-  
-    }
-    nav{
-      margin-left:.2em;
-      /*float: right;*/
-      position: relative;
-      /*top: 50%;
-      transform: translateY(-50%);*/
-      padding: 1em 0;
-    }
-    input, select, button{
-        font-family: inherit;
-        font-size: 1.2;
-      -webkit-border-radius: 10px;
-          -moz-border-radius: 10px;
-               border-radius: 10px;
-      -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-      padding: 10px;
-      border: 0;
-      opacity: 0.8;
-    }
-    .footer-button {
-      background-color: white;
-      font-family: inherit;
-        font-size: 1.2em;
-      -webkit-border-radius: 10px;
-          -moz-border-radius: 10px;
-               border-radius: 10px;
-      -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-      padding: 1%;
-      border: 0;
-      opacity: 0.8;
-    }
-    
-    a:hover,button:hover {
-      background-color: #c1dfe0;;
-      /*box-shadow: 3px 3px 5px black;*/
-    }
-    a{
-      text-decoration: none;
-      color: black;
-    }
-    .social-button{
-      font-size: .9em;
-      margin: .1em;
-    }
-    .nav-item{
-      padding: 1%;
-    }
-    .nav-item:hover {
-      background-color: #c1dfe0;
-      border-radius: 10px;
-    }
-    #menu{
-      margin-top: 5%;
-      /*height: 8%;*/
-      background: white;
-      opacity: 0.8;
-      font-size: 1.3em;
-    }
-    #intro{
-      padding: 10%;
-      text-align: center;
-      font-size: 3em;
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 700; 
-      color: #FFFFFF;
-      text-shadow: 5px 3px 12px #000000;
-      background: #000013;
-      opacity: 0.75;
-    }
-    #about{
-      font-size: 1em;  
-      background: white;
-      opacity: 0.9;
-      padding-left: 10%;
-      padding-right: 10%;
-      padding-top: 5%;
-      padding-bottom: 5%;
-    }
-    #about-title,#portfolio-title,#contact-title{
-      margin-top: 5%;
-      font-size: 2.2em;
-      /*height: 8%;*/
-      text-align: center;
-      background: black;
-      color: white;
-      opacity: 0.8;
-      padding: .2em 0;
-    }
-    #portfolio{
-      background: white;
-      opacity: 0.9;
-      padding: 5%;
-      text-align: center;
-    }
-    #contact{
-      padding: 10%;
-      padding-right: 10%;
-      padding-top: 5%;
-      padding-bottom: 5%;
-      background: white;
-      opacity: 0.9;
-      text-align: center;
-      /*height: 20%;*/
-      overflow: auto;
-    }
-    #footer{
-      text-align: center;
-      padding: 2%;
-      font-size: 1.3em;
-      margin-bottom: 2%
-    }
-    p{
-      font-size: 1em;
-      display:inline;
-      transition: color 200ms ease;
-    }
-    /* The class "Blink" is set to be transparent*/
-    p.blink {color:transparent;}
-    div.thumbnail {
-        vertical-align: top;
-        display: inline-block;
-        text-align: center;
-        width: 30%;
-        padding-bottom: 2%;
-        font-size: 1.2em;
-    }
-    div.thumbnail:hover{
-      background-color: #c1dfe0;
-      border-radius: 10px;
-     /*background-color: #AFBCD8;*/
-      /*box-shadow: 1px 1px 1px #495b5c;*/
-    }
-    img{
-      opacity: 1;
-      height: 90%;
-      width: 60%;
-      padding: 5%;
-    }
-    .caption {
-        display: block;
-    }
-    @media only screen and (max-width: 550px){
-      div.thumbnail {
-        font-size: 1.6em;
-      }
-    }
-  </style>
-  </head>
+<html lang="en">
 
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-  <body>
-    <div id='menu'>
-      <nav>
-        <a href=#about class='nav-item'>About</a>
-        <a href=#portfolio class='nav-item'>Portfolio</a>
-        <a href=#contact class='nav-item'>Contact</a>
-        <a href=#top class='nav-item'>Home</a>
-      </nav>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>iPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/beeeeees_crop.jpeg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Heather Akers-Healy</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/hrahhrah/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
-    <div id='intro'>
-      Heather Akers-Healy
-      
-      <hr>
-      
-      <button class='social-button'><a href=https://twitter.com/abbynormative + ' target="_blank">Twitter</a></button>
-      <button class='social-button'><a href=https://github.com/abbynormative + ' target="_blank">Github</a></button>
-      <button class='social-button'><a href=https://www.linkedin.com/in/hrahhrah + ' target="_blank">LinkedIn</a></button>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Heather Akers-Healy</h1>
+      <p><span class="typed" data-typed-items="Data Analytics, Digital Strategy, Web Development"></span></p>
     </div>
-    <div id='about-title'>
-             About</div>
-    <div id='about'>
-      Hi! I'm a web developer, CFO of a small hardware startup, activist, and occasional freelance journalist. 
-      I'm currently earning a Master's degree in data science at the Rochester Institute of Technology while volunteering with
-      <a href='https://oaklandprivacy.org'><u>Oakland Privacy Group</u></a>, where I recently completed a small research project
-      investigating hidden biases in how consumers make use of surveillance technology at home.
-      In previous lives I've been a paralegal, a legal secretary, an attendant for a man with cerebral palsy, and an admin at a 
-      medical provider's office, helping clients navigate the sometimes tricky medical insurance process.<br/><br/>
-      I'd like to find part-time work as a coder, researcher, or non-profit general support. I'm most interested in 
-      doing web development, data analytics, or software engineering with non-profits. My skills include: JavaScript, Python, R, 
-      HTML, CSS, Java, automated testing, and data visualization. I have experience working on both in-person and remote teams as a software engineer,
-      data analyst, and digital producer.<br/> <br/>      
-    </div>
-    <div id='portfolio-title'>
-    Portfolio</div>
-    <div id='portfolio'>
-      <div class='thumbnail'>
-      <a href=https://codepen.io/newbienewb/full/jbmZMO target="_blank"><img src=http://www.abbynormative.org/images/calculator.jpg ></img>
-        <span class="caption">JavaScript Calculator:<br/> A Free Code Camp project using AngularJS</span></a></div>
-    <div class='thumbnail'>
-      <a href=https://codepen.io/newbienewb/full/PzdALN target="_blank"><img src=http://www.abbynormative.org/images/markdown.png>
-      <span class="caption">Markdown Previewer:<br/> A simple React and SCSS project</span></a>
-    </div>
-    <div class='thumbnail'><a href=https://codepen.io/newbienewb/full/pjRKZW target="_blank"><img src=http://www.abbynormative.org/images/wikipedia.jpg>
-      <span class="caption">Wikipedia Viewer:<br/> A Wikipedia API and AngularJS project</span></a>
-    </div>
-    <div class='thumbnail'><a href=http://abbynormative.org/game target="_blank"><img src=https://i.imgur.com/empJP9W.jpg>
-      <span class="caption">NSA FOIA game:<br/> A text-based JavaScript adventure game</span></a>
-    </div><div class='thumbnail'><a href=https://abbynormative.org/Data-Viz/ target="_blank"><img src=http://www.abbynormative.org/images/datavizexample.png>
-      <span class="caption">June Weather:<br/> A data visualization using D3</span></a>
-    </div>
-    <div class='thumbnail'><a href=https://chrome.google.com/webstore/detail/florida-man-he-shall-not/fjfnlgknacipihkceoijaongcodggjnf target="_blank"><img src=https://i.imgur.com/3R30Urr.jpg>
-      <span class="caption">Florida Man:<br/> A Chrome extension for the 2016 election cycle</span></a>
-    </div>
-    </div>
-    <div id='contact-title'>
-    Contact</div>
-    <div id='contact'>
-      <div style='font-size: 2em;'>hrahhrah AT gmail dot com</div>
-      <div><button class='social-button' style='font-size: 2em;'><a href=https://twitter.com/abbynormative + ' target="_blank">Twitter</a></button>
-      <button class='social-button' style='font-size: 2em;'><a href=https://github.com/abbynormative + ' target="_blank">Github</a></button>
-      <button class='social-button' style='font-size: 2em;'><a href=https://www.linkedin.com/in/hrahhrah + ' target="_blank">LinkedIn</a></button></div>
-    </div>
-    <div id='footer'>
-       <button class='footer-button'><a href=#about>About</a></button>
-        <button class='footer-button'><a href=#portfolio>Portfolio</a></button>
-        <button class='footer-button'><a href=#contact>Contact</a></button>
-        <button class='footer-button'><a href=#top>Home</a></button>
-    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Technologist and strategist with experience in data analysis and visualization, machine learning, automated QA testing, email production, and web development. Email and social media copywriting. Focus on work contributing to the social good.</p>
+        </div>
+
+        <div class="row">
+          
+          <div class="col-lg-10 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Data Analyst, Digital Strategist &amp; Web Developer.</h3>
+            <p class="fst-italic">
+              Open to remote and SF Bay Area work as a Data Analyst · Information Technology Consultant · Data Scientist · Web Developer · Researcher · Digital Strategist · Digital Producer
+            </p>
+            <div class="row">
+              <div class="col-lg-9">
+                <ul>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href='https://www.linkedin.com/in/hrahhrah/' target="_blank" attribute>https://www.linkedin.com/in/hrahhrah/</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>San Francisco, CA, USA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Undergraduate:</strong> <span>BA Anthropology, University of CA, Berkeley</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Graduate:</strong> <span>MS Data Science, Rochester Institute of Technology</span></li>
+                </ul>
+              </div>
+              
+            
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Python (scikit-learn, numpy, Pandas, Jupyter notebooks) · R · RStudio · HTML · CSS · Bootstrap · JavaScript · Java · Predictive Analytics · Natural Language Processing · Digital Strategy · Microsoft Excel · Google Data Studio · Tableau · SQL · A/B Testing · Dashboards · Data Visualization · WordPress Development · Automated Testing · Selenium </p>
+        </div> 
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-github"></i>
+              <p><strong>15 public Github</strong> projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-clock"></i>
+              <p><strong>5000+ hours</strong> in data analytics, statistics, machine learning</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-file-person"></i>
+              <p><strong>5+ successful candidates</strong> to office aided by my skills</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-emoji-heart-eyes"></i>
+              <p><strong>endless amount of joy</strong> from helping people</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
     
-  </body>
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Work listed relates to my current career interests. Full work history available upon request.
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Heather Akers-Healy</h4>
+              <p><em>Technologist with a MS in Data Science. Specialist in data analysis, visualization, and data management. Background in web development, email production, QA, and automated testing. Motivated by mission-driven work.</em></p>
+              <p>Email: hrahhrah AT gmail DOT com</p>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science, Data Science</h4>
+              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <p>Completed courses in statistics, data visualization, data management, linear regression, predictive analytics and machine learning. Elective course at Penn State in Demography. Projects in Python, R, Tableau, and front-end web development.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Arts, Anthropology</h4>
+              <p><em>University of California, Berkeley, Berkeley, CA</em></p>
+              <p>Focus on Cultural Anthropology with courses in Ethnography, Archaeology, Medical Anthropology, Calculus, Astronomy, Religious and Ethnic Studies.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Certificate, Front-end Web Development</h4>
+              <p><em>FreeCodeCamp</em></p>
+              <p>Projects completed in Angular, jQuery, React and D3.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Data & Analytics Strategist</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Foglamp Digital, Remote</em></p>
+              <ul>
+                <li>Creation of dashboards to communicate findings for client programs</li>
+                <li>Data cleaning and analysis using Python and R</li>
+                <li>Projects include analysis of survey results using natural language processing; statistical analysis of client data; cluster analysis for audience segmentation</li>
+                <li>A/B testing and experiment design</li>
+                <li>Train team members on best practices in working with data; Troubleshoot technical and strategic questions</li>
+                <li>Part of an award-winning team supporting non-profits and successful candidates at the federal, state and local levels</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Digital Associate</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Foglamp Digital, Remote</em></p>
+              <ul>
+                <li>Quick and accurate email production in responsive HTML and CSS</li>
+                <li>Revamped data reporting to optimize efficiency and accuracy by automating processes in Google Sheets and Python</li>
+                <li>Custom performance analysis and recommendations to maximize conversions and other KPIs for clients</li>
+                <li>Email and social media drafts designed for persuasion and fundraising for each client's audience</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Data Science Intern and Web volunteer</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>Oakland Privacy Group, Remote</em></p>
+              <ul>
+                <li>Assisted in the development of a study examining demographic factors and the use of consumer surveillance technology</li>
+                <li>Cleaned and reformatted data from study results</li>
+                <li>Created data visuals and drafted talking points to be used in advocacy documents</li>
+                <li>Updated WordPress website pages and aided in the design and development of new features</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Digital Ads Associate</h4>
+              <h5>2018 - 2018</h5>
+              <p><em>Clarify Agency, San Francisco,CA</em></p>
+              <p>Political and non-profit campaign support for the 2018 cycle including:</p>
+              <ul>
+                <li>Digital ads trafficking, analysis, reporting, and optimization</li>
+                <li>Email production in Hubspot and Action Kit</li>
+                <li>Data visualization with Tableau and Excel</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Digital Ads Associate</h4>
+              <h5>2018 - 2018</h5>
+              <p><em>Clarify Agency, San Francisco,CA</em></p>
+              <p>Political and non-profit campaign support for the 2018 cycle including:</p>
+              <ul>
+                <li>Digital ads trafficking, analysis, reporting, and optimization</li>
+                <li>Email production in Hubspot and Action Kit</li>
+                <li>Data visualization with Tableau and Excel</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Engineer/Web Developer</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Green Mars, Remote</em></p>
+              <ul>
+                <li>Front-end development in React, jQuery, JavaScript</li>
+                <li>Backend development in Python/Django</li>
+                <li>Unit and API system tests for large-scale Internet of Things website</li>
+              </ul>
+            </div>
+          <div class="resume-item">
+              <h4>Software Engineering Intern, Automated Testing</h4>
+              <h5>2017 - 2017</h5>
+              <p><em>If(we), San Francisco, CA</em></p>
+              <ul>
+                <li>Automated QA tests in Java and Appium for iOS</li>
+                <li>Front end development for single page social media app</li>
+              </ul>
+            </div>
+          <div class="resume-item">
+              <h4>Contract Web Developer/Software Engineer</h4>
+              <h5>2014 - 2016</h5>
+              <p><em>Various clients, San Francisco, CA</em></p>
+              <ul>
+                <li>Completed a total re-development of a WordPress site in partnership with a designer</li>
+                <li>Turned PDF mockups into live production web pages using JavaScript, HTML & CSS</li>
+                <li>Primary contributor to an automated testing suite in Selenium/WebDriver and Python for large web services site</li>
+                <li>Produced donation campaign emails from Jira ticket specs using HTML, CSS, Cactuar and Blue State Digital tools</li>
+              </ul>
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Data analytics, machine learning, and web development projects</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Data Analytics and Machine Learning</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Please reach out if you have open roles or projects that look like a good fit!</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-10 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>San Francisco, CA</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>hrahhrah AT gmail DOT com</p>
+              </div>
+
+              
+
+              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=San%20Francisco,%20CA+(SF)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
